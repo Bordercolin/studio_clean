@@ -1,0 +1,29 @@
+---
+title: Projects
+tags: 
+  - navItem
+css: projects
+order: 3
+headerTitle: "We make digital experiences."
+listItemsName: "projects"
+---
+
+{% import "components/cards.njk" as cardGrid with context %}
+
+{% extends "layouts/grid.njk" %}
+
+{% block css %}
+
+  <link rel="stylesheet" href="/assets/css/header/header-without-button.css">
+  <link rel="stylesheet" href="/assets/css/card-grid/card-grid.css">
+{% endblock css %}
+
+{% block header %}
+  {% include "partials/header/header-without-button.njk" %}
+
+{% endblock header %}
+
+{% block content %}
+  {% include "partials/grids/normal-grid.njk" %}
+  
+{% endblock content %}

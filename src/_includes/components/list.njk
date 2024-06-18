@@ -1,0 +1,44 @@
+{% macro highlightList(listName) %}
+  {% for listItem in collections[listName] %}
+    {% if listItem.data.highlighted %}
+      <a href="{{listItem.url}}">
+        <div class="projects__list flex">
+          <div class="projects__list--grouped">
+            <p>{{listItem.data.datum}}</p>
+            <p>{{listItem.data.title}}</p>
+          </div>
+          <p>{{listItem.data.description}}</p>
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+{% macro normalList(listName) %}
+  {% for listItem in collections[listName] %}
+
+    <a href="{{listItem.url}}">
+      <div class="projects__list flex">
+        <div class="projects__list--grouped">
+          <p>{{listItem.data.datum}}</p>
+          <p>{{listItem.data.title}}</p>
+        </div>
+        <p>{{listItem.data.description}}</p>
+      </div>
+    </a>
+
+  {% endfor %}
+{% endmacro %}
+
+{% macro settingList(settingName) %}
+  {% for listItem in settingName %}
+
+    <div class="projects__list flex">
+      <div class="projects__list--grouped">
+        <p>{{listItem.description}}</p>
+      </div>
+      <p>{{listItem.name}}</p>
+    </div>
+
+  {% endfor %}
+{% endmacro %}

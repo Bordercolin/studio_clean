@@ -1,0 +1,41 @@
+---
+title: About
+tags: 
+  - navItem
+  - hero
+order: 4
+headerTitle: "We are a creative agency with talented people."
+headerButton: Contact us
+images:
+  - "/assets/img/Image 1.png"
+  - "/assets/img/Image 2.png"
+  - "/assets/img/Image 1_1.png"
+  - "/assets/img/Image 2_1.png"
+blogTitle: Meet our team
+---
+
+{% import "components/cards.njk" as teamGrid with context %}
+
+{% extends "layouts/hero.njk" %}
+
+{% block css %}
+
+  <link rel="stylesheet" href="/assets/css/header/header.css">
+  <link rel="stylesheet" href="/assets/css/main-images/main-images.css">
+  <link rel="stylesheet" href="/assets/css/card-grid/card-grid.css">
+
+{% endblock css %}
+
+{% block header %}
+  {% include "partials/header/header-with-button.njk" %}
+{% endblock header %}
+
+{% block content %}
+
+  {% include "partials/main-images/main-images.njk" %}
+
+{% endblock content %}
+
+{% block bottom %}
+  {% include "partials/grids/team-grid.njk" %}
+{% endblock bottom %}

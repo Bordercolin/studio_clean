@@ -1,0 +1,56 @@
+---
+title: Home
+tags: 
+  - navItem
+pageTitle: Home
+order: 1
+headerTitle: "We’re Clean, but we get our hands dirty."
+headerButton: Our projects
+headerButtonLink: /projects
+images:
+  - "/assets/img/Image 1_2.png"
+  - "/assets/img/Image 2_2.png"
+listItemsName: 'projects'
+amountOfHighlights: 3
+listTitle: Our Projects
+listButton: See all our work
+listButtonLink: /projects
+gridTitle: Read our latest news
+gridButton: Read our blog
+gridButtonLink: /blog
+---
+{% import "components/list.njk" as projectList with context %}
+{% import "components/cards.njk" as cardGrid with context %}
+
+{% extends "layouts/hero.njk" %}
+
+{% block css %}
+  <link rel="stylesheet" href="/assets/css/header/header.css">
+  <link rel="stylesheet" href="/assets/css/main-images/main-images.css">
+  <link rel="stylesheet" href="/assets/css/projects-list/projects-list.css">
+  <link rel="stylesheet" href="/assets/css/card-grid/card-grid.css">
+
+{% endblock css %}
+
+{% block header %}
+  {% include "partials/header/header-with-button.njk" %}
+
+{% endblock header %}
+
+{% block content %}
+  {# main-images #}
+
+  {% include "partials/main-images/main-images.njk" %}
+
+  {# projects-list #}
+
+  {% include "partials/lists/projects-list.njk" %}
+
+{% endblock content %}
+
+{% block bottom %}
+
+  {# blog-grid #}
+
+  {% include "partials/grids/highlighted-grid.njk" %}
+{% endblock bottom %}

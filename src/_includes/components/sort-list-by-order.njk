@@ -1,0 +1,5 @@
+{% macro navList(collectionName) %}
+  {% for item in collections[collectionName] | sortByOrder %}
+      <li><a href="{{item.url}}">{{item.data.title}}</a></li>
+    {% endfor %}
+{% endmacro %}

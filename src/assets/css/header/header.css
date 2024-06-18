@@ -1,0 +1,26 @@
+.header {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__title {
+  font-family: "DM-Sans";
+  text-align: left;
+  font-weight: 200;
+  font-size: 5rem;
+  width: 50%;
+  line-height: 5rem;
+}
+
+@media (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .header__title {
+    width: 100%;
+    font-size: 3rem;
+  }
+}

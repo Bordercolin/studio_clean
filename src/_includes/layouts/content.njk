@@ -1,0 +1,35 @@
+{% extends "layouts/default.njk" %}
+
+{% import "components/images.njk" as Image with context %}
+
+{% block css %}
+  <link rel="stylesheet" href="/assets/css/header/header-with-back.css">
+  <link rel="stylesheet" href="/assets/css/markdown/standard.css">
+  <link rel="stylesheet" href="/assets/css/image-types/full-length-image.css">
+  
+{% endblock css %}
+
+{% block main %}
+
+  {% block header %}
+    {% include "partials/header/header-with-back.njk" %}
+  {% endblock header %}
+
+  {% block topImage %}
+    {% if topImage %}
+      
+    {% endif %}
+  {% endblock topImage %}
+
+  {% block content %}
+      {% if topImmage %}
+        {{Image.fullLengthImage(topImmage)}}
+      {% endif %}
+
+    <div class="content">
+      {{content | safe}}
+    </div>
+
+  {% endblock content %}
+
+{% endblock main %}

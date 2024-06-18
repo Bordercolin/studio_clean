@@ -1,0 +1,13 @@
+{% import "components/sort-list-by-order.njk" as sortedList with context %}
+
+
+<footer class="footer flex my-medium">
+  <a href="/" class="footer__logo-title">{{settings.logoTitle}}</a>
+  <ul class="footer__nav-items flex">
+    {{sortedList.navList("navItem")}}
+  </ul>
+  <ul class="footer__nav-items flex">
+     {{sortedList.navList("footer")}}
+  </ul>
+
+</footer>

@@ -1,0 +1,25 @@
+{% import "components/sort-list-by-order.njk" as sortedList with context %}
+
+<nav class="nav-bar flex py-medium">
+  <a href="/" class="nav-bar__logo-title">{{settings.logoTitle}}</a>
+
+  <ul class="nav-bar__nav-items flex">
+    {{sortedList.navList("navItem")}}
+  </ul>
+
+  <div class="nav-bar__hamburger">
+    <i class="fa-solid fa-bars" style="color: #000000;"></i>
+  </div>
+
+  <div class="nav-bar--fullscreen flex">
+
+    <ul class="nav-bar--fullscreen__nav-items flex">
+      {{sortedList.navList("navItem")}}
+    </ul>
+
+    <div class="nav-bar--fullscreen__cross">
+      <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+    </div>
+  </div>
+
+</nav>

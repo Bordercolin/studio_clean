@@ -1,0 +1,13 @@
+
+
+
+
+ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+li {
+  padding-left: 20px; 
+  text-indent: -20px; 
+}
