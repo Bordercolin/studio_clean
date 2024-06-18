@@ -1,0 +1,44 @@
+.card-section {
+  flex-direction: column;
+}
+
+.card-section__grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.card-section__info {
+  padding: 2.5rem 0;
+  flex-direction: column;
+}
+
+.card-section__image {
+  border-radius: 1.25rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 10rem;
+}
+
+.card-section__button {
+  align-self: flex-end;
+}
+
+.card-section__image-container {
+  width: 100%;
+  height: 17.375rem;
+}
+
+.card-section__title {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 900px) {
+  .card-section__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+  .card-section__button {
+    align-self: flex-start;
+  }
+}

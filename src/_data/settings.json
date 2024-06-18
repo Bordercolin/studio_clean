@@ -1,0 +1,46 @@
+{
+  "logoTitle": "Clean",
+
+  "team": [
+    {
+      "image": "/assets/img/Rectangle 2.png",
+      "name": "John Doe",
+      "function": "Founder and CEO"
+    },
+    {
+      "image": "/assets/img/Rectangle 2_1.png",
+      "name": "Mac Johnson",
+      "function": "Prototyper"
+    },
+    {
+      "image": "/assets/img/Rectangle 2_2.png",
+      "name": "Francis McDonald",
+      "function": "Product Designer"
+    },
+    {
+      "image": "/assets/img/Rectangle 2_3.png",
+      "name": "Jane Smith",
+      "function": "Front-end Developer"
+    },
+    {
+      "image": "/assets/img/Rectangle 2_4.png",
+      "name": "Mark Cuban",
+      "function": "Back-end Developer"
+    }
+  ],
+
+  "contact": [
+    {
+      "name": "Address",
+      "description": "Korenmarkt 12, 9000 Ghent, Belgium"
+    },
+    {
+      "name": "Email",
+      "description": "info@clean.be"
+    },
+    {
+      "name": "Phone",
+      "description": "+32 09 45 78 12"
+    }
+  ]
+}

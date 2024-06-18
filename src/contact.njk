@@ -1,0 +1,33 @@
+---
+title: Contact
+tags: 
+  - navItem
+css: contact
+order: 5
+headerTitle: "We are a creative agency with talented people."
+listButton: "Send us an email"
+bottomImmage: /assets/img/Rectangle 2_29.png
+---
+
+{% import "components/list.njk" as List with context %}
+{% import "components/images.njk" as Image with context %}
+
+{% extends "layouts/list.njk" %}
+
+{% block css %}
+  <link rel="stylesheet" href="/assets/css/projects-list/projects-list.css">
+  <link rel="stylesheet" href="/assets/css/header/header-without-button.css">
+  <link rel="stylesheet" href="/assets/css/image-types/full-length-image.css">
+{% endblock css %}
+
+{% block header %}
+  {% include "partials/header/header-without-button.njk" %}
+{% endblock header %}
+
+{% block content %}
+  {% include "partials/lists/contact-list.njk" %}
+{% endblock content %}
+
+{% block bottom %}
+  {{Image.fullLengthImage(bottomImmage)}}
+{% endblock bottom %}

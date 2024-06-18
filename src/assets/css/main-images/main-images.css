@@ -1,0 +1,18 @@
+.main-images__list {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.main-images__image {
+  border-radius: 1rem;
+  width: 100%;
+  min-width: 18rem;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 750px) {
+  .main-images__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,96 @@
+body {
+  background-color: rgba(236, 235, 229, 1);
+  padding: 0 5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: "DM-Sans";
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.line {
+  border: none;
+  height: 0.1rem;
+  background-color: black;
+}
+
+.button {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.py-medium {
+  padding: 3rem 0;
+}
+
+.py-large {
+  padding: 5rem 0;
+}
+
+.my-large {
+  margin: 5rem 0;
+}
+
+.my-medium {
+  margin: 3rem 0;
+}
+
+.mb-medium {
+  margin-bottom: 3rem;
+}
+
+.mb-large {
+  margin-bottom: 6rem;
+}
+
+.mt-large {
+  margin-top: 6rem;
+}
+
+.pos-absolute {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.arrow {
+  background-color: rgba(128, 128, 128, 0.4);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.footer__nav-items,
+.nav-bar__nav-items {
+  list-style: none;
+}

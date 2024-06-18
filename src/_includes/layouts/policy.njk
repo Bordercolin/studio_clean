@@ -1,0 +1,22 @@
+{% extends "layouts/default.njk" %}
+
+{% block css %}
+  <link rel="stylesheet" href="/assets/css/header/header-without-button.css">
+  <link rel="stylesheet" href="/assets/css/markdown/standard.css">
+  <link rel="stylesheet" href="/assets/css/markdown/policy.css">
+{% endblock css %}
+
+{% block main %}
+
+  {% block header %}
+    {% include "partials/header/header-without-button.njk" %}
+  {% endblock header %}
+
+  {% block content %}
+    <div class="content">
+      {{content | safe}}
+    </div>
+
+  {% endblock content %}
+
+{% endblock main %}

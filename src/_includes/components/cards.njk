@@ -1,0 +1,69 @@
+{% macro highlightedCardGrid(collectionName) %}
+
+  {% for item in collections[collectionName] %}
+    {% if item.data.highlighted %}
+      <div class="card-section__card">
+        <div class="card-section__image-container pos-relative">
+          <a href="{{item.url}}">
+            <img class="card-section__image" src="{{item.data.image}}" alt="">
+          </a>
+
+          <a class="pos-absolute" href="{{item.url}}">
+            <i class="fa-solid fa-arrow-right arrow" style="color: #000000;"></i>
+          </a>
+
+        </div>
+
+        <div class="card-section__info flex">
+          <h3 class ="card-section__title">
+            {{item.data.title}}</h3>
+          <p class="card-section__description">{{item.data.description}}</p>
+        </div>
+
+      </div>
+    {% endif %}
+
+  {% endfor %}
+{% endmacro %}
+
+{% macro teamGrid(team) %}
+  {% for item in team %}
+    <div class="card-section__card">
+      <div class="card-section__image-container">
+
+        <img class="card-section__image" src="{{item.image}}" alt="">
+
+      </div>
+      <div class="card-section__info flex">
+        <h3 class="card-section__title">{{item.name}}</h3>
+        <p class="card-section__description">{{item.function}}</p>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+{% macro cardGrid(collectionName) %}
+
+  {% for item in collections[collectionName] %}
+
+    <div class="card-section__card">
+      <div class="card-section__image-container pos-relative">
+        <a href="{{item.url}}">
+          <img class="card-section__image" src="{{item.data.image}}" alt="">
+        </a>
+        <a class="pos-absolute" href="{{item.url}}">
+          <i class="fa-solid fa-arrow-right arrow" style="color: #000000;"></i>
+        </a>
+
+      </div>
+
+      <div class="card-section__info flex">
+        <h3 class ="card-section__title">
+          {{item.data.title}}</h3>
+        <p class="card-section__description">{{item.data.description}}</p>
+      </div>
+
+    </div>
+
+  {% endfor %}
+{% endmacro %}

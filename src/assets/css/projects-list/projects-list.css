@@ -1,0 +1,25 @@
+.projects__list {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px rgba(0, 0, 0, 0.353) solid;
+  justify-content: space-between;
+}
+
+.projects__list--grouped {
+  display: flex;
+  gap: 4rem;
+}
+
+.projects {
+  flex-direction: column;
+}
+
+.projects__button {
+  align-self: flex-end;
+}
+
+@media (max-width: 750px) {
+  .projects__button {
+    align-self: flex-start;
+  }
+}

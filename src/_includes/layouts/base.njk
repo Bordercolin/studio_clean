@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/standard/reset.css">
+    <link rel="stylesheet" href="/assets/css/standard/fonts.css">
+    <link rel="stylesheet" href="/assets/css/standard/main.css">
+    <link rel="stylesheet" href="/assets/css/navbar/nav-bar.css">
+    <link rel="stylesheet" href="/assets/css/footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    {% block css %}{% endblock css %}
+    <title>{{ pageTitle }}</title>
+  </head>
+  <body>
+ 
+
+     {% block body %}{% endblock body %}
+  
+   <script src="/assets/js/nav-bar.js"></script>
+  </body>
+</html>
